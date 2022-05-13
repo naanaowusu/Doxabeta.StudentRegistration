@@ -28,19 +28,18 @@ export default Controller.extend({
             link: 'i-i-s-student-registration-student-l',
             caption: i18n.t('forms.application.sitemap.student-registration.i-i-s-student-registration-student-l.caption'),
             title: i18n.t('forms.application.sitemap.student-registration.i-i-s-student-registration-student-l.title'),
-            icon: 'suitcase',
+            icon: 'tasks',
             children: null
           }, {
             link: 'i-i-s-student-registration-registration-l',
             caption: i18n.t('forms.application.sitemap.student-registration.i-i-s-student-registration-registration-l.caption'),
             title: i18n.t('forms.application.sitemap.student-registration.i-i-s-student-registration-registration-l.title'),
-            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-student-registration-course-l',
             caption: i18n.t('forms.application.sitemap.student-registration.i-i-s-student-registration-course-l.caption'),
             title: i18n.t('forms.application.sitemap.student-registration.i-i-s-student-registration-course-l.title'),
-            icon: 'briefcase',
+            icon: 'book',
             children: null
           }]
         }

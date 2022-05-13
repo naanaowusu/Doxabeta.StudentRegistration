@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Student",
+  "name": "IISStudentRegistrationStudentE",
+  "className": "StudentE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-student-registration-student",
+      "modelProjection": "StudentE"
+    }
+  ]
+}

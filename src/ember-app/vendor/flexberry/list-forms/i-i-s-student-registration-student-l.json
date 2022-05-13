@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-student-registration-student-e",
+  "editForm": "i-i-s-student-registration-student-e",
+  "external": false,
+  "caption": "Student",
+  "name": "IISStudentRegistrationStudentL",
+  "className": "StudentL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-student-registration-student",
+      "modelProjection": "StudentL"
+    }
+  ]
+}

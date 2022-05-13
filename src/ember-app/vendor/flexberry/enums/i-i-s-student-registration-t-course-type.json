@@ -1,0 +1,10 @@
+﻿{
+  "nameSpace": "IIS.StudentRegistration",
+  "className": "tCourseType",
+  "enumObjects": {
+    "Programming": "",
+    "Finance": "",
+    "Management": "",
+    "Analytics": ""
+  }
+}

@@ -1,0 +1,117 @@
+﻿{
+  "name": "IISStudentRegistrationStudent",
+  "modelName": "i-i-s-student-registration-student",
+  "className": "Student",
+  "nameSpace": "IIS.StudentRegistration",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "surname",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "age",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "gender",
+      "type": "i-i-s-student-registration-t-gender",
+      "flexberryType": "tGender",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "StudentE",
+      "modelName": "i-i-s-student-registration-student",
+      "attrs": [
+        {
+          "name": "surname",
+          "caption": "Surname",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "age",
+          "caption": "Age",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "gender",
+          "caption": "Gender",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "StudentL",
+      "modelName": "i-i-s-student-registration-student",
+      "attrs": [
+        {
+          "name": "surname",
+          "caption": "Surname",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "age",
+          "caption": "Age",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "gender",
+          "caption": "Gender",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

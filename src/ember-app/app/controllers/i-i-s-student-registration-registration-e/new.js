@@ -1,0 +1,4 @@
+import IISStudentRegistrationRegistrationEController from '../i-i-s-student-registration-registration-e';
+
+var IISStudentRegistrationRegistrationENewController = IISStudentRegistrationRegistrationEController;
+export default IISStudentRegistrationRegistrationENewController;

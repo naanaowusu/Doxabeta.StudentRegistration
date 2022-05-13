@@ -1,0 +1,84 @@
+<h3 class="ui header">{{t "forms.i-i-s-student-registration-registration-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-student-registration-registration-e.dateOfRegistration-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.dateOfRegistration
+      class=(if (v-get validationModel "dateOfRegistration" "isInvalid") "error")
+      data-test-i-i-s-student-registration-registration-e-dateOfRegistration=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "dateOfRegistration" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-student-registration-registration-e-courseType="true">
+    <label>{{t "forms.i-i-s-student-registration-registration-e.courseType-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-student-registration-t-course-type")
+      value=model.courseType
+      class=(if (v-get validationModel "courseType" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "courseType" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-student-registration-registration-e.course-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.course
+      displayAttributeName="name"
+      autocomplete=true
+      relationName="course"
+      projection="CourseL"
+      title=(t "forms.i-i-s-student-registration-registration-e.course-caption")
+      readonly=readonly
+      componentName="courseLookup"
+      class=(if (v-get validationModel "course" "isInvalid") "error")
+      data-test-i-i-s-student-registration-registration-e-course=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "course" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-student-registration-registration-e.student-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.student
+      displayAttributeName="surname"
+      autocomplete=true
+      relationName="student"
+      projection="StudentL"
+      title=(t "forms.i-i-s-student-registration-registration-e.student-caption")
+      readonly=readonly
+      componentName="studentLookup"
+      class=(if (v-get validationModel "student" "isInvalid") "error")
+      data-test-i-i-s-student-registration-registration-e-student=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "student" "message")}}
+  </div>
+</form>

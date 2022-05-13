@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Course",
+      "projection": "CourseL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Student",
+      "projection": "StudentL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Registration",
+  "name": "IISStudentRegistrationRegistrationE",
+  "className": "RegistrationE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-student-registration-registration",
+      "modelProjection": "RegistrationE"
+    }
+  ]
+}

@@ -26,7 +26,7 @@ CREATE TABLE "Registration"
 
 	"DateOfRegistration" DATE NULL,
 
-	"CourseType" NVARCHAR2(11) NULL,
+	"CourseType" NVARCHAR2(18) NULL,
 
 	"Course_m0" RAW(16) NOT NULL,
 

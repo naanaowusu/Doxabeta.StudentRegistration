@@ -15,7 +15,7 @@ CREATE TABLE Student (
 CREATE TABLE Registration (
  primaryKey UUID NOT NULL,
  DateOfRegistration TIMESTAMP(3) NULL,
- CourseType VARCHAR(11) NULL,
+ CourseType VARCHAR(18) NULL,
  Course_m0 UUID NOT NULL,
  Student_m0 UUID NOT NULL,
  PRIMARY KEY (primaryKey));

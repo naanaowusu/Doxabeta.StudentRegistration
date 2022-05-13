@@ -2,9 +2,9 @@
   "nameSpace": "IIS.StudentRegistration",
   "className": "tCourseType",
   "enumObjects": {
-    "Programming": "",
-    "Finance": "",
-    "Management": "",
-    "Analytics": ""
+    "Programming": "Programming",
+    "Analytics": "Business Analytics",
+    "Finance": "Finance",
+    "Management": "Management"
   }
 }

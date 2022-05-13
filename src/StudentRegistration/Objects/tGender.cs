@@ -12,6 +12,7 @@ namespace IIS.StudentRegistration
 {
     using System;
     using System.Xml;
+    using ICSSoft.STORMNET;
     
     
     // *** Start programmer edit section *** (Using statements)
@@ -28,20 +29,16 @@ namespace IIS.StudentRegistration
     public enum tGender
     {
         
-        /// <summary>
-        /// Male.
-        /// </summary>
         // *** Start programmer edit section *** (tGender.Male CustomAttributes)
 
         // *** End programmer edit section *** (tGender.Male CustomAttributes)
+        [Caption("Male")]
         Male,
         
-        /// <summary>
-        /// Female.
-        /// </summary>
         // *** Start programmer edit section *** (tGender.Female CustomAttributes)
 
         // *** End programmer edit section *** (tGender.Female CustomAttributes)
+        [Caption("Female")]
         Female,
     }
 }

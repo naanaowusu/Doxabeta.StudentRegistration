@@ -1,8 +1,8 @@
 import { createEnum } from 'ember-flexberry-data/utils/enum-functions';
 
 export default createEnum({
-  Programming: '',
-  Finance: '',
-  Management: '',
-  Analytics: ''
+  Programming: 'Programming',
+  Analytics: 'Business Analytics',
+  Finance: 'Finance',
+  Management: 'Management'
 });

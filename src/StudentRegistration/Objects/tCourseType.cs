@@ -12,6 +12,7 @@ namespace IIS.StudentRegistration
 {
     using System;
     using System.Xml;
+    using ICSSoft.STORMNET;
     
     
     // *** Start programmer edit section *** (Using statements)
@@ -28,36 +29,28 @@ namespace IIS.StudentRegistration
     public enum tCourseType
     {
         
-        /// <summary>
-        /// Programming.
-        /// </summary>
         // *** Start programmer edit section *** (tCourseType.Programming CustomAttributes)
 
         // *** End programmer edit section *** (tCourseType.Programming CustomAttributes)
+        [Caption("Programming")]
         Programming,
         
-        /// <summary>
-        /// Finance.
-        /// </summary>
-        // *** Start programmer edit section *** (tCourseType.Finance CustomAttributes)
-
-        // *** End programmer edit section *** (tCourseType.Finance CustomAttributes)
-        Finance,
-        
-        /// <summary>
-        /// Management.
-        /// </summary>
-        // *** Start programmer edit section *** (tCourseType.Management CustomAttributes)
-
-        // *** End programmer edit section *** (tCourseType.Management CustomAttributes)
-        Management,
-        
-        /// <summary>
-        /// Business Analytics.
-        /// </summary>
         // *** Start programmer edit section *** (tCourseType.Analytics CustomAttributes)
 
         // *** End programmer edit section *** (tCourseType.Analytics CustomAttributes)
+        [Caption("Business Analytics")]
         Analytics,
+        
+        // *** Start programmer edit section *** (tCourseType.Finance CustomAttributes)
+
+        // *** End programmer edit section *** (tCourseType.Finance CustomAttributes)
+        [Caption("Finance")]
+        Finance,
+        
+        // *** Start programmer edit section *** (tCourseType.Management CustomAttributes)
+
+        // *** End programmer edit section *** (tCourseType.Management CustomAttributes)
+        [Caption("Management")]
+        Management,
     }
 }

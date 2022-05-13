@@ -23,7 +23,7 @@ CREATE TABLE [Registration] (
 
 	 [DateOfRegistration] DATETIME  NULL,
 
-	 [CourseType] VARCHAR(11)  NULL,
+	 [CourseType] VARCHAR(18)  NULL,
 
 	 [Course_m0] UNIQUEIDENTIFIER  NOT NULL,
 
